@@ -1,0 +1,200 @@
+:root{
+    --clr-primary-400: hsl(25, 97%, 53%);
+
+    --clr-neutral-White: hsl(0, 0%, 100%);
+    --clr-neutral-Light_Grey: hsl(217, 12%, 63%);
+    --clr-neutral-Medium_Grey: hsl(216, 12%, 54%);
+    --clr-neutral-Dark_Blue: hsl(213, 19%, 18%);
+    --clr-neutral-Dark_Blue2: hsl(214, 19%, 26%);
+    --clr-neutral-Very_Dark_Blue: hsl(216, 12%, 8%);
+
+    --ff-base: 'Overpass', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3 {
+    line-height: 1;
+    color: var(--clr-neutral-White);
+    margin-bottom: 1rem;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 15px;
+    background-color: var(--clr-neutral-Very_Dark_Blue);
+    margin: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  p{
+    color: var(--clr-neutral-Light_Grey);
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  /* Submit Section*/
+  .main-container {
+    background-color: var(--clr-neutral-Dark_Blue);
+    padding: 2rem;
+    border-radius: 1.625rem;
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .star {
+    background-color: var(--clr-neutral-Dark_Blue2);
+    padding: 0.945rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+  }
+
+  .btn {
+    width: 3rem;
+    height: 3rem;
+    padding-top: 0.325rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+    border: none;
+    color: var(--clr-neutral-White);
+    background-color: var(--clr-neutral-Dark_Blue2);
+  }
+
+  .btn:hover {
+    background-color: var(--clr-primary-400);
+  }
+
+  .btn:focus {
+    background-color: var(--clr-neutral-Light_Grey);
+  }
+
+  .submit-button {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-White);
+    width: 100%;
+    padding: 0.7rem 0 0.5rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .submit-button:hover {
+    background-color: var(--clr-neutral-White);
+    color: var(--clr-primary-400);
+  }
+
+  /* Thank You Section*/
+  .thank-you {
+    background-color: var(--clr-neutral-Dark_Blue);
+    padding: 1.5rem;
+    border-radius: 1.625rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+
+  }
+
+  .phone {
+    display: block;
+    margin: 2rem auto 2rem;
+  }
+
+  .you-selected {
+    background-color: var(--clr-neutral-Dark_Blue2);
+    color: var(--clr-primary-400);
+    border-radius: 30px;
+    padding:0.2rem 1rem 0;
+    font-size: 0.8rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .attribution, p, a {
+    margin-top: 15px;
+    color: var(--clr-neutral-White);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: var(--clr-primary-400);
+  }
